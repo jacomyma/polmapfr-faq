@@ -78,24 +78,25 @@ a {
  */
 
 /* FAQ Content Styles */
-.faq-content-header, .faq-content-body, .faq-content-footer {
+.faq-content-body {
+    padding:  0.2em 2em;
+}
+.faq-content-header, .faq-content-footer {
     padding: 1em 2em;
 }
     .faq-content-header {
         border-top: 1px solid #ddd;
     }
-
         .faq-content-title {
             margin: 0.5em 0 0;
         }
         .faq-content-subtitle {
-            font-size: 1em;
+            padding-top: 0.2em;
+            font-size: 1.2em;
             margin: 0;
             font-weight: normal;
+            color: #999;
         }
-            .faq-content-subtitle span {
-                color: #999;
-            }
 
 /*
  * -- TABLET (AND UP) MEDIA QUERIES --

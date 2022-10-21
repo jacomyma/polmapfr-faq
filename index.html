@@ -23,45 +23,95 @@
     <div id="main" class="pure-u-1">
         <div class="faq-content">
 
-            <div class="faq-content-header pure-g">
-                <div class="pure-u-1-2">
-                    <h1 class="faq-content-title">PolMapFR c'est quoi ?</h1>
-                    <!-- <p class="faq-content-subtitle">
-                        Sous-titre
-                    </p> -->
-                </div>
+            <div class="faq-content-header">
+                <h1 class="faq-content-title">PolMapFR c'est quoi ?</h1>
             </div>
-
             <div class="faq-content-body">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Un bot Twitter qui tweete chaque jour une carte du débat politique sur Twitter France.
                 </p>
                 <p>
-                    Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Tu peux voir les derniers tweets du robot dans cette page. Si ça t'intéresse, <a href="https://twitter.com/PolMapFR">abonne-toi sur Twitter</a>.
                 </p>
-                <p>
-                    Aliquam ac feugiat dolor. Proin mattis massa sit amet enim iaculis tincidunt. Mauris tempor mi vitae sem aliquet pharetra. Fusce in dui purus, nec malesuada mauris. Curabitur ornare arcu quis mi blandit laoreet. Vivamus imperdiet fermentum mauris, ac posuere urna tempor at. Duis pellentesque justo ac sapien aliquet egestas. Morbi enim mi, porta eget ullamcorper at, pharetra id lorem.
-                </p>
-                <p>
-                    Donec sagittis dolor ut quam pharetra pretium varius in nibh. Suspendisse potenti. Donec imperdiet, velit vel adipiscing bibendum, leo eros tristique augue, eu rutrum lacus sapien vel quam. Nam orci arcu, luctus quis vestibulum ut, ullamcorper ut enim. Morbi semper erat quis orci aliquet condimentum. Nam interdum mauris sed massa dignissim rhoncus.
-                </p>
-                <p>
-                    Regards,<br>
-                    Tilo
-                </p>
-            </div>
-            <div class="faq-content-header pure-g">
-                <div class="pure-u-1-2">
-                    <h1 class="faq-content-title">Question 2</h1>
-                    <!-- <p class="faq-content-subtitle">
-                        Sous-titre
-                    </p> -->
-                </div>
             </div>
 
+            <div class="faq-content-header">
+                <h1 class="faq-content-title">C'est quoi le "débat politique"&nbsp;?</h1>
+                <p class="faq-content-subtitle">
+                    Qui décide de ce qui est politique ou pas ?
+                </p>
+            </div>
             <div class="faq-content-body">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Il n'y a pas de définition neutre de "ce qui est politique", mais il a bien fallu faire un choix. Ici, ce qui est politique, c'est ce que publient les députés de la France sur Twitter. En un sens, ils représentent le peuple, et ce sont des professionels de la politique.
+                </p>
+                <p>
+                    Plus précisément, on considère ici que le "débat politique" est constitué des <em>documents</em> tweetés par les députés. Un document est soit un tweet, soit une page web. Le débat politique, ce sont tous les tweets retweetés ou mentionnés par les députés, et toutes les pages web dont ils mettent le lien dans leurs tweets.
+                </p>
+                <p>
+                    <strong>Clarification&nbsp;:</strong> les tweets des députés eux-mêmes ne sont pas forcément des documents du débat politique. Ce n'est pas ce que disent les députés qui fait le débat politique, mais ce à quoi ils font référence. Un tweet de député n'est un document politique que si un autre député le retweete.
+                </p>
+                <p>
+                    Certains détails ont été omis, mais ils sont mentionnés dans la <a href="#methodo">méthodologie</a>.
+                </p>
+            </div>
+
+            <div class="faq-content-header">
+                <h1 class="faq-content-title">Comment lire la carte ?</h1>
+            </div>
+            <div class="faq-content-body">
+                <p>
+                    Chaque point est un compte Twitter qui participe au débat politique. Pour être dans la carte, il faut tweeter des documents aussi tweetés par des députés. <strong>Remarque :</strong> il n'est pas nécessaire de retweeter un député. Il suffit de tweeter la même page web ou de faire le même retweet.
+                </p>
+                <p>
+                    La position de chaque compte dépend de ses interactions. On est proche de ceux avec qui on interagit le plus. <strong>Attention, ce n'est pas forcément volontaire.</strong> Pour les comptes influents, les interactions viennent surtout des autres. Les comptes influents sont géneralement proches de ceux qui les mentionnent.
+                </p>
+                <p>
+                    La couleur dépend de la similarité avec les députés, en termes de documents politiques rediffusés. Cette similarité indique de fait une sorte d'alignement, mais il on ne peut pas savoir à l'avance si cet alignement est le fait d'un véritable rapprochement idéologique, ou simplement d'une coincidence. Certains documents politiques ne sont pas partisans, et ils créent de l'alignement politique à travers tout l'éventail des opinions politiques. <strong>Ce sont les tendances qui sont importantes.</strong> Lorsque des groupes entiers sont alignés différemments (ils ont des couleurs nettements distinctes) alors on peut en conclure qu'ils s'intéressent, collectivement, à des questions différentes, ou alors aux mêmes questions mais sous des angles différents.
+                </p>
+            </div>
+
+            <div class="faq-content-header">
+                <h1 class="faq-content-title"><a id="methodo"></a>Méthodologie</h1>
+                <p class="faq-content-subtitle">
+                    Le processus dans tous ses détails.
+                </p>
+            </div>
+            <div class="faq-content-body">
+                <p>
+                    <strong>En bref.</strong> La carte d'aujourd'hui est desinée à partir des <em>diffusions</em> de documents politiques. Ces diffusions sont des tweets d'hier qui mentionnent un document également tweeté par un ou plusieurs députés la semaine passée, et qui sont soit une réponse, soit un retweet, soit une citation (ce sont des interactions). Le réseau se compose des comptes Twitter qui se mentionnent dans les diffusions du mois dernier. Le résau est filtré pour ne conserver que son cœur.
+                </p>
+                <p>
+                    <strong>En détails&nbsp;:</strong>
+                    <ol>
+                        <li>
+                            On se procure la liste des députés actuels du parlement en la téléchargeant sur Regards Citoyens.
+                        </li>
+                        <li>
+                            On récupère la liste de leurs tweets d'hier (de minuit à minuit GMT, soit de 2h à 2h heure française), hors tweets-réponses.
+                        </li>
+                        <li>
+                            On extrait les "documents" cités dans ces tweets. Un document peut être soit un tweet qui a été mentionné ou retweeté, soit une URL extérieure à Twitter.
+                        </li>
+                        <li>
+                            On normalise les URLs afin qu'elles soient plus comparables.
+                        </li>
+                        <li>
+                            On agrège les documents politiques (cités par les députés) dans une fenêtre de 7 jours. Intuitivement, ces documents représentent l'état actuel du débat politique au cours des 7 derniers jours, vu du parlement.
+                        </li>
+                        <li>
+                            Pour les documents les plus cités par les députés au cours des 7 derniers jours, on récupère jusqu'à 2 500 utilisateurs qui ont également "diffusé" cette ressource hier. "Diffusé" signifie qu'un compte Twitter l'a mentionné dans une réponse, un retweet ou une citation. On arrête de récolter à 33 000 diffusions, de sorte qu'on obtient environ 1 million de diffusions par mois.
+                        </li>
+                        <li>
+                            On extrait la liste des utilisateurs qui ont diffusé pendant les 30 derniers jours, plafonnée à 1 million, et en gardant ceux qui ont eu le plus d'interactions. On retrace l'affiliation des députés qui diffusent les mêmes ressources, si une affiliation est présente dans le fichier source. On peut donc calculer quels députés ont diffusé les mêmes ressources qu'un compte présent dans le corpus.
+                        </li>
+                        <li>
+                            On extrait le réseau des utilisateurs ayant au moins 4 interactions (mentionnant ou étant mentionnés dans les diffusions) avec d'autres utilisateurs du réseau. C'est le "cœur" du réseau (le 4-core).
+                        </li>
+                        <li>
+                            On applique une mise en page au réseau et on définit les tailles et les couleurs des nœuds. Une couleur est appliquée si le compte a au moins 10 diffusions similaires à celles des députés avec des affiliations colorées (ces couleurs sont mélangées avec leurs poids respectifs).
+                        </li>
+                    </ol>
                 </p>
             </div>
         </div>
