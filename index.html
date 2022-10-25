@@ -73,13 +73,10 @@
 
             <div class="faq-content-header">
                 <h1 class="faq-content-title"><a id="methodo"></a>Méthodologie</h1>
-                <p class="faq-content-subtitle">
-                    Le processus dans tous ses détails.
-                </p>
             </div>
             <div class="faq-content-body">
                 <p>
-                    <strong>En bref.</strong> La carte d'aujourd'hui est desinée à partir des <em>diffusions</em> de documents politiques. Ces diffusions sont des tweets d'hier qui mentionnent un document également tweeté par un ou plusieurs députés la semaine passée, et qui sont soit une réponse, soit un retweet, soit une citation (ce sont des interactions). Le réseau se compose des comptes Twitter qui se mentionnent dans les diffusions du mois dernier. Le résau est filtré pour ne conserver que son cœur.
+                    <strong>En bref.</strong> La carte d'aujourd'hui est dessinée à partir des <em>diffusions</em> de documents politiques. Ces diffusions sont des tweets d'hier qui mentionnent un document également tweeté par un ou plusieurs députés la semaine passée, et qui sont soit une réponse, soit un retweet, soit une citation (ce sont donc des interactions). Le réseau se compose des comptes Twitter qui ont interagit par des diffusions lors des 30 derniers jours. Le résau est filtré pour ne conserver que son cœur.
                 </p>
                 <p>
                     <strong>En détails&nbsp;:</strong>
@@ -100,7 +97,7 @@
                             On agrège les documents politiques (cités par les députés) dans une fenêtre de 7 jours. Intuitivement, ces documents représentent l'état actuel du débat politique au cours des 7 derniers jours, vu du parlement.
                         </li>
                         <li>
-                            Pour les documents les plus cités par les députés au cours des 7 derniers jours, on récupère jusqu'à 2 500 utilisateurs qui ont également "diffusé" cette ressource hier. "Diffusé" signifie qu'un compte Twitter l'a mentionné dans une réponse, un retweet ou une citation. On arrête de récolter à 33 000 diffusions, de sorte qu'on obtient environ 1 million de diffusions par mois.
+                            Pour les documents les plus cités par les députés au cours des 7 derniers jours, on récupère jusqu'à 1000 utilisateurs qui ont également "diffusé" cette ressource hier par une interaction. "Diffusé" signifie qu'un compte Twitter l'a mentionné dans une réponse, un retweet ou une citation. On arrête de récolter à 33 000 diffusions, de sorte qu'on obtient environ 1 million de diffusions par mois.
                         </li>
                         <li>
                             On extrait la liste des utilisateurs qui ont diffusé pendant les 30 derniers jours, plafonnée à 1 million, et en gardant ceux qui ont eu le plus d'interactions. On retrace l'affiliation des députés qui diffusent les mêmes ressources, si une affiliation est présente dans le fichier source. On peut donc calculer quels députés ont diffusé les mêmes ressources qu'un compte présent dans le corpus.
